@@ -1,3 +1,18 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+
+
+  get 'tasks/update'
+
+
+
+
+
+  get 'tasks/show'
+
+  get 'tasks/new'
+
+  get 'tasks/edit'
+
+  resources :tasks, only: [:create, :index, :destroy]
 end
