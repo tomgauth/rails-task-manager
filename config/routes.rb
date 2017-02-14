@@ -1,12 +1,6 @@
 Rails.application.routes.draw do
 
-
-
   get 'tasks/update'
-
-
-
-
 
   get 'tasks/show'
 
